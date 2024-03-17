@@ -2,26 +2,29 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour 
+namespace Tugas3
 {
-    [SerializeField] private float jumpForce;
-    [SerializeField] private GameObject bullet;
-    [SerializeField] private Rigidbody2D rb;
-
-    private void Start() => rb = GetComponent<Rigidbody2D>();
-
-    private void OnEnable()
+    public class PlayerController : MonoBehaviour 
     {
-        EventManager.OnPlayerJump += Jump; 
-        EventManager.OnPlayerShoot += Shoot; 
-    }
+        [SerializeField] private float jumpForce;
+        [SerializeField] private GameObject bullet;
+        [SerializeField] private Rigidbody2D rb;
 
-    private void OnDisable() 
-    {
-        EventManager.OnPlayerJump -= Jump;   
-        EventManager.OnPlayerShoot -= Shoot; 
-    }
+        private void Start() => rb = GetComponent<Rigidbody2D>();
 
-    private void Jump() => rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-    private void Shoot() => Instantiate(bullet, transform.position, transform.rotation);
+        private void OnEnable()
+        {
+            EventManager.OnPlayerJump += Jump; 
+            EventManager.OnPlayerShoot += Shoot; 
+        }
+
+        private void OnDisable() 
+        {
+            EventManager.OnPlayerJump -= Jump;   
+            EventManager.OnPlayerShoot -= Shoot; 
+        }
+
+        private void Jump() => rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        private void Shoot() => Instantiate(bullet, transform.position, transform.rotation);
+    }
 }

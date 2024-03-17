@@ -1,9 +1,10 @@
 #if UNITY_EDITOR
 using UnityEditor;
 using System.Linq;
+using Tugas5;
 
-[CustomEditor(typeof(PlayerControl), true)]
-public class PlayerControlEditor : Editor 
+[CustomEditor(typeof(PlayerController), true)]
+public class PlayerControllerEditor : Editor 
 {
     SerializedProperty[] properties;
     bool showAtributs, showLocations = false;

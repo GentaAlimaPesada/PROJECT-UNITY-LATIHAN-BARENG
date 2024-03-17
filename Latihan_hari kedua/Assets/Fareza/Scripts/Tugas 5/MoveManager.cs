@@ -1,9 +1,10 @@
 using UnityEngine;
+using Tugas5;
 
 public class MoveManager : MonoBehaviour 
 {
     public static MoveManager instance { get; private set;}
-    public PlayerState currentPlayer;
+    private PlayerState currentPlayer;
 
     private void Awake()
     {

@@ -3,10 +3,11 @@ using UnityEngine;
 
 public class Door : MonoBehaviour 
 {
-    public int doorID;
-    private bool isOpen = false;
+    [SerializeField] private int doorID;
+    [SerializeField] private float moveDistance = 3f;
+
     private Vector3 originalPosition;
-    private float moveDistance = 3f;
+    private bool isOpen = false;
 
     private void Start() => originalPosition = transform.position;
 
