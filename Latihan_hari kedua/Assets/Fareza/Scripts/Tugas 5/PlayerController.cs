@@ -19,17 +19,12 @@ namespace Tugas5
         private bool isMovementFinished = false;
 
 
-        void Start()
-        {
-            movePoint.parent = null;
-        }
+        void Start() => movePoint.parent = null;
 
         void Update()
         {
             if (MoveManager.instance.GetCurrentPlayer() == playerState)
-            {
                 HandleMovement();
-            }
 
             if (Input.GetKeyDown(KeyCode.Space) && isMovementFinished)
             {

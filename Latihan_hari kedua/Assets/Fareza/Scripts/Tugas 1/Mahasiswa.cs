@@ -6,8 +6,5 @@ public class Mahasiswa : Person
     [SerializeField] private int NIM;
     [SerializeField] private string prodi;
 
-    public void Announcement() 
-    {
-        Debug.Log("Dengan NIM : " + NIM + " dan dari Prodi " + prodi);
-    }
+    public void Announcement() => Debug.Log("Dengan NIM : " + NIM + " dan dari Prodi " + prodi);
 }

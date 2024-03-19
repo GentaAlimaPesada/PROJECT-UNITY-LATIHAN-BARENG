@@ -16,21 +16,14 @@ public class MoveManager : MonoBehaviour
         instance = this;
     }
 
-    private void Start()
-    {
-        currentPlayer = PlayerState.Player1;
-    }
+    private void Start() => currentPlayer = PlayerState.Player1;
 
     public void SwitchPlayerTurn()
     {
         if (currentPlayer == PlayerState.Player1)
-        {
             currentPlayer = PlayerState.Player2;
-        }
         else if (currentPlayer == PlayerState.Player2)
-        {
             currentPlayer = PlayerState.Player1;
-        }
     }
 
     public PlayerState GetCurrentPlayer()
