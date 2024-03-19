@@ -255,3 +255,94 @@ Domain Reload Profiling: 160902ms
 			EditorAssembliesLoaded (96ms)
 		ExecutionOrderSort2 (1ms)
 		AwakeInstancesAfterBackupRestoration (155ms)
+Refreshing native plugins compatible for Editor in 934.91 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 36 unused Assets / (36.3 KB). Loaded Objects now: 4589.
+Memory consumption went from 150.6 MB to 150.6 MB.
+Total: 251.159300 ms (FindLiveObjects: 0.488600 ms CreateObjectMapping: 3.221600 ms MarkObjects: 247.277400 ms  DeleteObjects: 0.169100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 385.128484 seconds.
+  path: Assets/Fareza/Scenes/Tugas 1 Fareza Scene.unity
+  artifactKey: Guid(5a76a1e7997ddf549a248b557e2487e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fareza/Scenes/Tugas 1 Fareza Scene.unity using Guid(5a76a1e7997ddf549a248b557e2487e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f130f5a044c85f20fb39aa63aedeb80d') in 0.496619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 266.340094 seconds.
+  path: Assets/Latihan Harian/Assets/Raihan Ramadhan/Hari 3/Script
+  artifactKey: Guid(f66773c3d13774c468203368bfc1ee3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Latihan Harian/Assets/Raihan Ramadhan/Hari 3/Script using Guid(f66773c3d13774c468203368bfc1ee3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5c0a1f2ce5dd641718dc613cc8acf70') in 0.037805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.459650 seconds.
+  path: Assets/Latihan Harian/Assets/Raihan Ramadhan/Hari 4/Script/Player.cs
+  artifactKey: Guid(35b465f8eba1e3c41940180c4a24b4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Latihan Harian/Assets/Raihan Ramadhan/Hari 4/Script/Player.cs using Guid(35b465f8eba1e3c41940180c4a24b4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62e48ded42c678bb7a8d0f7fa97b144d') in 0.000947 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  4.472 seconds
+Refreshing native plugins compatible for Editor in 52.66 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 33.505 seconds
+Domain Reload Profiling: 37848ms
+	BeginReloadAssembly (1283ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (203ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (219ms)
+	RebuildCommonClasses (156ms)
+	RebuildNativeTypeToScriptingClass (58ms)
+	initialDomainReloadingComplete (148ms)
+	LoadAllAssembliesAndSetupDomain (2696ms)
+		LoadAssemblies (3200ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (192ms)
+			TypeCache.Refresh (32ms)
+				TypeCache.ScanAssembly (3ms)
+			ScanForSourceGeneratedMonoScriptInfo (135ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (33506ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1749ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (78ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (273ms)
+			ProcessInitializeOnLoadAttributes (1280ms)
+			ProcessInitializeOnLoadMethodAttributes (101ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (49ms)
