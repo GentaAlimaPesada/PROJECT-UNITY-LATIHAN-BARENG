@@ -21,7 +21,7 @@ public class HealthEditor : Editor
             serializedObject.FindProperty("healthBarFill")
         };
     }
-
+    
     public override void OnInspectorGUI()
     {
         serializedObject.Update();
