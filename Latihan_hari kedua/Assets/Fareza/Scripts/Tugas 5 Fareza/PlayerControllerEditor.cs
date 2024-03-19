@@ -1,7 +1,6 @@
 #if UNITY_EDITOR
 using UnityEditor;
 using System.Linq;
-using Tugas5;
 
 [CustomEditor(typeof(PlayerController), true)]
 public class PlayerControllerEditor : Editor 

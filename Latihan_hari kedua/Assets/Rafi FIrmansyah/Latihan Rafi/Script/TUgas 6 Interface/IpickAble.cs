@@ -1,6 +1,7 @@
-
-public interface IPickAble
+namespace IntrfcRafi
 {
-    void Pickup();
+    public interface IPickAble
+    {
+        void Pickup();
+    }
 }
-    

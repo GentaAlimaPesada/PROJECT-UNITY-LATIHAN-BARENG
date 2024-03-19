@@ -3,7 +3,7 @@ using static CharacterStateController;
 
 public class PlayerInput : MonoBehaviour
 {
-        // Enum untuk daftar state
+    // Enum untuk daftar state
     public enum CharacterState
     {
         Idle,

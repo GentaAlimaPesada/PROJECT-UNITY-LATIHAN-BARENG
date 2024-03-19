@@ -1,38 +1,42 @@
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+namespace EnmyRaihan
 {
-    public int  Health = 100; 
-    private int currentHealth;
-
-    void Start()
+    public class Enemy : MonoBehaviour
     {
-        currentHealth = Health;
-    }
+        public int  Health = 100; 
+        private int currentHealth;
 
-    void Update()
-    {
-        // Memeriksa jika darah enemy mencapai nol, Maka Object Enemy akan hancur 
-        if (currentHealth <= 0)
+        void Start()
         {
-            Destroy(gameObject);
-            Debug.Log("Enemy mati");
+            currentHealth = Health;
         }
-    }
 
-    void OnMouseDown()
-    {
-        if (Input.GetMouseButtonDown(0)) 
+        void Update()
         {
-            TakeDamage(20); // Kurangi darah enemy sebanyak 20
-            Debug.Log("Hit");
-
+            // Memeriksa jika darah enemy mencapai nol, Maka Object Enemy akan hancur 
+            if (currentHealth <= 0)
+            {
+                Destroy(gameObject);
+                Debug.Log("Enemy mati");
+            }
         }
-    }
 
-    // Fungsi untuk mengurangi darah enemy
-    void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
+        void OnMouseDown()
+        {
+            if (Input.GetMouseButtonDown(0)) 
+            {
+                TakeDamage(20); // Kurangi darah enemy sebanyak 20
+                Debug.Log("Hit");
+
+            }
+        }
+
+        // Fungsi untuk mengurangi darah enemy
+        void TakeDamage(int damage)
+        {
+            currentHealth -= damage;
+        }
     }
 }
+
