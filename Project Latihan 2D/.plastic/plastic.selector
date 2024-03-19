@@ -1,0 +1,4 @@
+repository "Project Latihan 2D@FIPlay@cloud"
+  path "/"
+    br "/main"
+    co "/main"
