@@ -5,13 +5,14 @@ public class Budi : MonoBehaviour, IClickable
 {
     public void OnClick()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
-            Debug.Log("Halo Saya Budi");
-        }
+        Debug.Log("Halo Saya Budi");
     }
 
-    private void Update() {
-        OnClick();
+    private void Update() 
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+           OnClick();
+        }
     }
 }

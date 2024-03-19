@@ -22,8 +22,8 @@ namespace Tugas3
         {
             EventManager.OnPlayerJump -= Jump;   
             EventManager.OnPlayerShoot -= Shoot; 
-        }
-
+        } 
+        
         private void Jump() => rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         private void Shoot() => Instantiate(bullet, transform.position, transform.rotation);
     }

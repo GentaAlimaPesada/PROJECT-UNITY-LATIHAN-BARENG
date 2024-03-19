@@ -5,10 +5,10 @@ using System;
 
 public class GameManager : MonoBehaviour
 {
+    #region Singleton
     public static GameManager Instance { get; private set;}
-    public static Action<int> OnPlayerApproachingDoor;
-
-    private void Awake() {
+    private void Awake() 
+    {
         if(Instance != null)
         {
             Destroy(gameObject);
@@ -16,9 +16,13 @@ public class GameManager : MonoBehaviour
         }
         Instance = this;
     }
-    
+    #endregion
+
+    #region Observer
+    public static Action<int> OnPlayerApproachingDoor;
     public void PlayerApproachingDoor(int doorID)
     {
         OnPlayerApproachingDoor?.Invoke(doorID);
     }
+    #endregion
 }
