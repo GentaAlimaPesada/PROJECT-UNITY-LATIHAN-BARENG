@@ -3,26 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class GameManager : MonoBehaviour
+namespace GmMngrFareza
 {
-    #region Singleton
-    public static GameManager Instance { get; private set;}
-    private void Awake() 
+    public class GameManager : MonoBehaviour
     {
-        if(Instance != null)
+        #region Singleton
+        public static GameManager Instance { get; private set;}
+        private void Awake() 
         {
-            Destroy(gameObject);
-            return;
+            if(Instance != null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            Instance = this;
         }
-        Instance = this;
-    }
-    #endregion
+        #endregion
 
-    #region Observer
-    public static Action<int> OnPlayerApproachingDoor;
-    public void PlayerApproachingDoor(int doorID)
-    {
-        OnPlayerApproachingDoor?.Invoke(doorID);
+        #region Observer
+        public static Action<int> OnPlayerApproachingDoor;
+        public void PlayerApproachingDoor(int doorID)
+        {
+            OnPlayerApproachingDoor?.Invoke(doorID);
+        }
+        #endregion
     }
-    #endregion
 }

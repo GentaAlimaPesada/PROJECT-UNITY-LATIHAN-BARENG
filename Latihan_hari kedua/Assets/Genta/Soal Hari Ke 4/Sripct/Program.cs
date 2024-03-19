@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SrvLctrGenta;
 
 /// <summary>
 /// Kelas utama yang digunakan untuk mengeksekusi program.

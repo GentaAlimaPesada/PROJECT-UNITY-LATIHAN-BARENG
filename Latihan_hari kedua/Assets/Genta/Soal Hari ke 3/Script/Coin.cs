@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coin : MonoBehaviour
+namespace CoinGenta
 {
-    void OnTriggerEnter2D(Collider2D other)
+    public class Coin : MonoBehaviour
     {
-        if (other.gameObject.CompareTag("Player"))
+        private void OnTriggerEnter2D(Collider2D other)
         {
-          other.gameObject.GetComponent<UI_Manager>().addCoinCollected();
-            Destroy(gameObject);
+            if (other.gameObject.CompareTag("Player"))
+            {
+            other.gameObject.GetComponent<UI_Manager>().addCoinCollected();
+                Destroy(gameObject);
+            }
         }
     }
 }
+
